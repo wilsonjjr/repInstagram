@@ -1,0 +1,236 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size; 14px;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243, 243, 243);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:start;
+  width: 750px;
+  height:100%;
+  margin-top: 10%;
+  position: relative;
+  left: 0;
+}
+
+.container1{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+  left:-30%;
+
+}
+
+.container1 .nokia1{
+  height: 46rem;
+  position: absolute;
+  left:-20%;
+
+}
+
+.container1 .follow{
+  border-radius: 47% 65% 45% 25% / 100% 95% 95% 95% ;
+  object-fit: fill;
+  position: absolute;
+  top: 4%;
+  left: 57%;
+  width: 75%;
+  height: 57%;
+}
+
+.container1 .nokia2{
+  height: 46rem;
+
+}
+
+.container2{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+  position: relative;
+  top: 10%;
+  left: 5%;
+
+}
+
+.grupo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  padding: 3.3rem 0;
+  border: 1px solid lightgray;
+}
+.grupo:nth-child(1){
+  min-height: 19rem;
+}
+
+.instagram-logo{
+  height: 3rem;
+  margin-bottom: 5px;
+}
+
+.perfil-foto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+
+.perfil-foto img{
+  height: 12em;
+  min-width: 18em;
+  object-fit: fill;
+}
+
+.instagram-login{
+  background-color: #0095f6;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.instagram-logout{
+  color: #0095f6;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+}
+
+.not-account{
+  color: rgb(160, 160, 160);
+  padding: 10px;
+}
+
+.link-blue{
+  color: #0095f6;
+  padding: 10px;
+}
+
+.get-app{
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ padding: 1.3rem 0;
+}
+
+.download{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.app-download{
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+.app-download:nth-child(1){
+  background-image: url('../img/apple-button.png')
+}
+
+.app-download:nth-child(2){
+  background-image: url('../img/googleplay-button.png')
+}
+
+/* media queries*/
+
+@media screen and (max-width: 1024px) {
+
+  main{
+    width: 65%;
+    height: 100%;
+  }
+
+  .container1{
+    width: 65%;
+    position: relative;
+    left:-30%;
+  }
+
+  .container1 .follow{
+    position: absolute;
+    left: 45%;
+    width: 68%;
+
+  }
+
+  .container2 {
+    width: 80%;
+    height: 50%;
+
+  }
+
+@media screen and (max-width: 768px) {
+    body{
+      background-color: white;
+    }
+
+    main{
+      width: 100%;
+      height: 100%;
+    }
+
+    .container1{
+      display: none;
+    }
+
+    .container1 .nokia1{
+      display: none;
+    }
+
+    .container1 .nokia2{
+      display: none;
+    }
+
+    .container2 {
+      width: 90%;
+      height: 50%;
+
+    }
+
+    .grupo{
+      border: 1px solid transparent;
+      height: 40%;
+      margin: 0;
+      padding: 0;
+  }
+
+    .app-download{
+      background-size: no-repeat cover;
+      margin-right: 5px;
+      padding: 10px;
+      height: 2.5rem;
+    }
+}
